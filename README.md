@@ -93,7 +93,7 @@ If you wish to use a [configuration file](https://github.com/tighten/tlint#confi
 
 ## Thanks
 
-- [tlint](https://github.com/tighten/tlint)
+- [tighten/tlint](https://github.com/tighten/tlint)
 - [d9705996/vscode-tighten-lint](https://github.com/d9705996/vscode-tighten-lint)
 
 ## License
