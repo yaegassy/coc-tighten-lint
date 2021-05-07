@@ -2,6 +2,8 @@
 
 [tlint](https://github.com/tighten/tlint) (Tighten linter for Laravel) extension for coc.nvim.
 
+<img width="780" alt="coc-tighten-lint-demo" src="https://user-images.githubusercontent.com/188642/117405138-10d68d80-af46-11eb-92f8-8af825546a9a.gif">
+
 ## Install
 
 **vim-plug**:
