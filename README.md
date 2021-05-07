@@ -15,7 +15,7 @@
 **vim-plug**:
 
 ```vim
-Plug 'yaegassy/coc-curlylint', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-tighten-lint', {'do': 'yarn install --frozen-lockfile'}
 ```
 
 ## Features
