@@ -26,7 +26,7 @@ Plug 'yaegassy/coc-curlylint', {'do': 'yarn install --frozen-lockfile'}
 ## Detect tool: tlint
 
 1. `tighten-lint.toolPath` setting
-1. `vender/bin/lint` (project)
+1. `vendor/bin/tlint` (project)
 1. builtin (Installation commands are also provided)
    - Mac/Linux: ~/.config/coc/extensions/coc-tighten-lint-data/tlint/vendor/bin/tlint
    - Windows: ~/AppData/Local/coc/extensions/coc-tighten-lint-data/tlint/vendor/bin/tlint
