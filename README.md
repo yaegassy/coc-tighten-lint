@@ -6,15 +6,17 @@
 
 ## Install
 
+**CocInstall**:
+
+```vim
+:CocInstall coc-tighten-lint
+```
+
 **vim-plug**:
 
 ```vim
 Plug 'yaegassy/coc-curlylint', {'do': 'yarn install --frozen-lockfile'}
 ```
-
-**CocInstall**:
-
-> TODO
 
 ## Features
 
