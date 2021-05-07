@@ -1,0 +1,122 @@
+{
+  "name": "coc-tighten-lint",
+  "version": "0.0.1",
+  "tlintVersion": "6.0.0",
+  "description": "tlint (Tighten linter for Laravel) extension for coc.nvim",
+  "author": "yaegassy <yosstools@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim",
+    "laravel",
+    "blade",
+    "php",
+    "linter",
+    "vim",
+    "neovim"
+  ],
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaegassy/coc-tighten-lint"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/rimraf": "^3.0.0",
+    "@types/which": "^2.0.0",
+    "@types/tmp": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.8.42",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.2",
+    "which": "^2.0.2",
+    "tmp": "^0.1.0"
+  },
+  "activationEvents": [
+    "onLanguage:php",
+    "onLanguage:blade"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-tighten-lint configuration",
+      "properties": {
+        "tighten-lint.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-tighten-lint extension"
+        },
+        "tighten-lint.toolPath": {
+          "type": "string",
+          "default": "",
+          "description": "The path to the tlint (Absolute path)"
+        },
+        "tighten-lint.lintOnOpen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Lint file on opening"
+        },
+        "tighten-lint.lintOnChange": {
+          "type": "boolean",
+          "default": true,
+          "description": "Lint file on change"
+        },
+        "tighten-lint.lintOnSave": {
+          "type": "boolean",
+          "default": true,
+          "description": "Lint file on save"
+        },
+        "tighten-lint.defaultSeverity": {
+          "type": "string",
+          "enum": [
+            "error",
+            "warning",
+            "info",
+            "hint"
+          ],
+          "default": "error",
+          "description": "Severity of violations",
+          "scope": "window"
+        },
+        "tighten-lint.severities": {
+          "type": "object",
+          "default": {},
+          "description": "Source to severity mappings",
+          "scope": "window"
+        },
+        "tighten-lint.only": {
+          "type": "array",
+          "default": [],
+          "description": "Policies to include",
+          "scope": "window"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "tighten-lint.install",
+        "title": "Install tlint"
+      }
+    ]
+  }
+}
