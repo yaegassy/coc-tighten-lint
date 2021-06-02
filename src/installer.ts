@@ -29,11 +29,11 @@ export async function tlintInstall(context: ExtensionContext, outputChannel: Out
   }
 
   try {
-    window.showWarningMessage(`Install tlint...`);
+    window.showMessage(`Install tlint...`);
     outputChannel.appendLine(`Install tlint...`);
     await exec(installCmd);
     statusItem.hide();
-    window.showWarningMessage(`tlint: installed!`);
+    window.showMessage(`tlint: installed!`);
     outputChannel.appendLine(`tlint: installed!`);
   } catch (error) {
     statusItem.hide();
