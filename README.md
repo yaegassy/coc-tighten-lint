@@ -93,7 +93,7 @@ If you wish to use a [configuration file](https://github.com/tighten/tlint#confi
 
 ## Code Actions
 
-- `Run: tighten-lint.autFix`
+- `Run: tighten-lint.autoFix`
 
 ## Thanks
 

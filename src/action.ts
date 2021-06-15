@@ -13,7 +13,7 @@ export class TlintCodeActionProvider implements CodeActionProvider {
     });
 
     if (existsTlintDiagnostics) {
-      const title = `Run: tighten-lint.autFix`;
+      const title = `Run: tighten-lint.autoFix`;
       const command = {
         title: '',
         command: 'tighten-lint.autoFix',
