@@ -1,7 +1,7 @@
 {
   "name": "coc-tighten-lint",
   "version": "0.1.5",
-  "tlintVersion": "6.0.3",
+  "tlintVersion": "6.2.1",
   "description": "tlint (Tighten linter for Laravel) extension for coc.nvim",
   "author": "yaegassy <yosstools@gmail.com>",
   "license": "MIT",
